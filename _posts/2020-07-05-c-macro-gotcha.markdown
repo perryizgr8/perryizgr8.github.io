@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "C macro gotcha"
-date:   2020-07-05 10:16:11 +0530
 categories: C macros programming gotcha
 ---
 I'll try to describe the incident that inspired me to start this blog.
