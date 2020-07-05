@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You cannot mark a neighbor STALE in old Linux"
-categories: C linux ARP programming
+categories: C linux ARP
 ---
 Reporting another ARP quirk with the Linux kernel.
 

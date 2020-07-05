@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You cannot delete neighbors in Linux"
-categories: C linux ARP programming
+categories: C linux ARP
 ---
 Linux maintains a list of known IP neighbors. You can look at the list using the `iproute2` family of commands.
 

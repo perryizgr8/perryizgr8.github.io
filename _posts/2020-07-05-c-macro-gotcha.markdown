@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C macro gotcha"
-categories: C macros programming gotcha
+categories: C gotcha
 ---
 I'll try to describe the incident that inspired me to start this blog.
 
