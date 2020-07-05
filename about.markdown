@@ -14,5 +14,6 @@ You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
 
-
 [jekyll-organization]: https://github.com/jekyll
+
+Site favicon is [Parallel Workflow icon](https://icons8.com/icons/set/paralell-workflow) by [Icons8](https://icons8.com)
