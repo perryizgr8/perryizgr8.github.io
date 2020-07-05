@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You cannot delete neighbors in Linux"
-categories: C macros programming gotcha
+categories: C linux ARP programming
 ---
 Linux maintains a list of known IP neighbors. You can look at the list using the `iproute2` family of commands.
 
@@ -14,4 +14,4 @@ You can add neighbors, change their details or modify the state. But you cannot 
 
 It looks like Linux won't let you delete neighbors even if you're using the `netlink` interface. This was surprising to me, since I usually thought of `netlink` as a form of direct control over the kernel.
 
-This could have real consequences if you ever want to implement a userspace ARP daemon, but still want the kernel to perform basic network functions.
+This could have real consequences if you ever want to implement a userspace ARP app, but still want the kernel to perform basic network functions.
