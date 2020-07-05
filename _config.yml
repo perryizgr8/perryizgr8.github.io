@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Enter Blog Name Here
+title: Acquire and Release
+author: Parikshit Misra
 description: >- # this means to ignore newlines until "baseurl:"
   Thoughts 💭 on programming 👨🏻‍💻 and anything else I feel like 🤷🏻‍♂️
 baseurl: "" # the subpath of your site, e.g. /blog
