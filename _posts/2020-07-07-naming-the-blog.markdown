@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Naming the Blog"
+title:  "Naming the blog"
 categories: meta
 ---
 After a few hours of thinking and asking a couple of people I know, I came up with the name of this blog.
