@@ -23,7 +23,7 @@ author: Parikshit Misra
 desc: >- # this means to ignore newlines until "baseurl:"
   Thoughts 💭 on programming 👨🏻‍💻 and anything else I feel like 🤷🏻‍♂️
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://perryizgr8.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://perryizgr8.github.io/"
 github_username:  perryizgr8
 show_excerpts: true
 google_analytics: UA-171559537-1
@@ -32,6 +32,10 @@ google_analytics: UA-171559537-1
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - projects.markdown
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
