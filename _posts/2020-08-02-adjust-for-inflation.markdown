@@ -2,6 +2,7 @@
 layout: post
 title:  "I made an inflation calculator for ₹ (Indian Rupees)"
 categories: projects
+permalink: /_posts/2020-08-02-adjust-for-inflation
 ---
 I've always wanted to know the answer to the kind of question: How much would ₹X be worth n years later, if you account only for inflation. While there are many good calculators that do this for $, I could not find a good one for ₹.
 

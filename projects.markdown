@@ -13,7 +13,7 @@ A notepad style calculator with line-by-line evaluation.
 
 
 ### Adjust for inflation
-Find out the buying power of the Indian Rupee ₹ over time.
+Find out the buying power of the Indian Rupee ₹ over time. Read my [blog post](/_posts/2020-08-02-adjust-for-inflation) about it.
 
 ![Link](/Link.png) <https://perryizgr8.github.io/adjust-for-inflation>
 
