@@ -8,7 +8,7 @@ While cleaning out some old cartons last weekend, I found my old Raspberry Pi Mo
 I decided to track my home internet speed to see if my ISP is ripping me off 😉. Here's how I did it.
 
 ## Measuring speed on Raspberry Pi
-[Speedtest.net](https://www.speedtest.net) has an [official CLI client](https://www.speedtest.net/apps/cli) that you can install directly using `apt`. It selects the best server automatically and reports the download and upload speed, along with the latency of you connection.
+[Speedtest.net](https://www.speedtest.net) has an [official CLI client](https://www.speedtest.net/apps/cli) that you can install directly using `apt`. It selects the best server automatically and reports the download and upload speed, along with the latency of your connection.
 
 {% highlight shell %}
 $ speedtest-cli
@@ -79,7 +79,7 @@ print('time=' + str(int(now)))
 {% endhighlight %}
 
 ## Store measurments in a Firestore DB
-A bit of code will push this to a Firestore DB. Google lets you use a Firestore DB if you stay within a reasonable number of operations per day.
+A bit of code will push this to a Firestore DB. Google lets you use a Firestore DB for free if you stay within a reasonable number of operations per day.
 
 {% highlight python %}
 from google.cloud import firestore
@@ -145,7 +145,7 @@ Then it's simple to chart the speeds and latency over the roughly 24-hour period
 ![Speed test chart](/images/speedtest.png)
 
 ## Problem in the setup
-This chart shows that my download speed varies between 20 to 35Mbps, and the upload varies between 15 to 20Mbps. This is significantly lower than the 100Mbps symmetric I pay for. If you go back to the first test result I showed in this post, which I ran from my laptop, it shows 83Mbps download and60 Mbps upload. So why this discrepancy?
+This chart shows that my download speed varies between 20 to 35Mbps, and the upload varies between 15 to 20Mbps. This is significantly lower than the 100Mbps symmetric I pay for. If you go back to the first test result I showed in this post, which I ran from my laptop, it shows 83Mbps download and 60Mbps upload. So why this discrepancy?
 
 I suspect this is where my old Pi is showing its age. Even though it is connected to my router using a 100Mbps ethernet cable, the hardware is simply not powerful enough to fully saturate the connection. So I will not be running this setup anymore. Maybe one day I'll get a newer model and run this for a longer duration. That would hopefully reveal some interesting patterns.
 
