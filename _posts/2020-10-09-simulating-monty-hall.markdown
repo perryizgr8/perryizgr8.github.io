@@ -14,7 +14,7 @@ Now he asks if you would like to switch your original choice.
 Should you stick with your original door or switch to the other unopened door?
 
 ## The paradox
-Mathematically, you should always switch. That will give you a ~67% chance of winning the car. Staying with the original door will give you only a 33% chance.
+Mathematically, you should always switch. That will give you a ~67% chance of winning the car. Staying with the original door will give you only a ~33% chance.
 
 To many people, including me, this feels quite weird. It is hard to accept this conclusion. My gut says the odds are 50-50. It should not matter if I switch or stay.
 
@@ -96,7 +96,7 @@ This is put inside a loop that runs a million times.
 ## Final results
 Staying with the original door won 332,053 times, and switching won 667,947 times. That's a 66.79% win rate for switching.
 
-We arrive at the conclusion we already knew from basic probability calculations, but I'm still not uncomfortable about it.
+We arrive at the conclusion we already knew from basic probability calculations, but I'm still uncomfortable about it.
 
 ## Code
 You can look at the code in [my Jupyter notebook](https://github.com/perryizgr8/monty-hall/blob/main/monty-hall.ipynb). If you want, you can try running this for more number of iterations, and the win probability for switching your door should get closer and closer to the ideal 2/3.
