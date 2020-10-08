@@ -3,7 +3,7 @@ layout: post
 title:  "Simulating the Monty Hall problem"
 categories: python
 ---
-The [Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) is a well known probability puzzle which many people find counterintuitive. Personally, even though I now understand the basic maths involved, it still seems absurd.
+The [Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) is a well known probability puzzle which many people find counterintuitive. Personally, even though I now understand the basic maths involved, it still seems absurd. So I decided to simulate the situation.
 
 ## The problem
 You are in a game show that has three closed doors. Behind one door is a car, and the other two have goats. Your goal is to win the car.
@@ -96,7 +96,7 @@ This is put inside a loop that runs a million times.
 ## Final results
 Staying with the original door won 332,053 times, and switching won 667,947 times. That's a 66.79% win rate for switching.
 
-We arrive at the conclusion we already knew from basic probability calculations.
+We arrive at the conclusion we already knew from basic probability calculations, but I'm still not uncomfortable about it.
 
 ## Code
-You can look at my code in [my Jupyter notebook](https://github.com/perryizgr8/monty-hall/blob/main/monty-hall.ipynb). If you like, you can try running this for more number of iterations, and the win probability for switching your door should get closer and closer to the ideal 2/3.
+You can look at the code in [my Jupyter notebook](https://github.com/perryizgr8/monty-hall/blob/main/monty-hall.ipynb). If you want, you can try running this for more number of iterations, and the win probability for switching your door should get closer and closer to the ideal 2/3.
