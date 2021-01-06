@@ -20,6 +20,20 @@ Find out the buying power of the Indian Rupee ₹ over time. Read my [blog post]
 ![Code repository](/Code.png) <https://github.com/perryizgr8/adjust-for-inflation>
 
 
+### Monitoring internet speed with a Raspberry Pi
+Read about my attempts to monitor my home internet speed using a Raspberry Pi.
+
+![Link](/Link.png) <https://perryizgr8.github.io/raspberry-pi/2020/09/20/monitoring-speed-rpi.html>
+
+
+### Track ping RTT to websites using a Raspberry Pi
+Tracking the latency from your home internet connection to popular websites using a Raspberry Pi.
+
+![Link](/Link.png) </_posts/2021-01-06-track-ping-rtt-part1.markdown>
+
+![Code repository](/Code.png) <https://github.com/perryizgr8/pinger>
+
+
 ### How accurate is the forecast?
 Measuring the accuracy of weather prediction in Banglore over the last 5 days. Unfortunately the website is now offline.
 
