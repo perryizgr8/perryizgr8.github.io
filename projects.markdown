@@ -29,7 +29,7 @@ Read about my attempts to monitor my home internet speed using a Raspberry Pi.
 ### Track ping RTT to websites using a Raspberry Pi
 Tracking the latency from your home internet connection to popular websites using a Raspberry Pi.
 
-![Link](/Link.png) </_posts/2021-01-06-track-ping-rtt-part1.markdown>
+![Link](/Link.png) <https://perryizgr8.github.io/raspberry-pi/2021/01/06/track-ping-rtt-part1.html>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/pinger>
 

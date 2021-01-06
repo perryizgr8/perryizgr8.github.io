@@ -6,7 +6,7 @@ categories: raspberry-pi
 In my quest to employ my Raspberry Pi to some use, I thought why not track ping roud trip times to various popular websites. This would be less likely to run into the resource constraints that ruined my [speed test project](/_posts/2020-09-20-monitoring-speed-rpi.markdown), since the Pi's network link wouldn't be saturated. Also I decided to use `go` this time instead of `python`, for performance.
 
 ## Putting together the program
-`Go` has a great ecosystem with people having written hundreds of packages for common stuff. You can usually import them from GitHub and use them in your project. I used the following:
+Go has a great ecosystem with people having written hundreds of packages for common stuff. You can usually import them from GitHub and use them in your project. I used the following:
 1. [go-ping](https://github.com/go-ping/ping) - Pings an address and returns various statistics.
 2. [go-chart](https://github.com/wcharczuk/go-chart/) - Lets you draw charts from data.
 
