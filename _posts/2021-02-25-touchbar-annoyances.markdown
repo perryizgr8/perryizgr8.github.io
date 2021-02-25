@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The uselessness of touchboar on Macbook"
+title:  "The uselessness of touchbar on Macbook"
 categories: Apple
 ---
 My new workplace gives out MacBook Pro laptops to developers. There is an option of Thinkpad (with Linux) too, but most systems and processes are well aligned with MacOS. This is the first time I have used an Apple laptop as my full-time work machine.
@@ -31,6 +31,6 @@ Due to all the issues above, the touchbar controls are never as good to use as t
 In traditional Apple fashion, the touchbar is highly limited in its customizability. I thought maybe I can put a row of app shortcuts on it, so I can immediately open notes, or calendar, or calculator. That would have had at least some utility. But you can't do that. I thought maybe I can display the status tray icons on it. No can do. I thought maybe i can have it always show the time and notification icons. Nope.
 
 ## Why this is so annoying
-You would wonder why I'm so annoyed by this. After all I can easily ignore it and use the laptop as if it never had ther touchbar. That's true, but think of what could have been.
+You would wonder why I'm so annoyed by this. After all I can easily ignore it and use the laptop as if it never had a touchbar. That's true, but think of what could have been.
 
 Instead of putting in this expensive part into the laptop, Apple could have used that money to add something useful, like an extra 8GB of RAM, at the same cost to the buyer. Maybe a better webcam. Maybe a couple of additional USB ports. The possibilities are endless.
