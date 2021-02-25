@@ -6,9 +6,9 @@ categories: Apple
 Continuing with the Apple theme from the last post, I will try to explain why Apple's Magic Mouse 2 is the worst mouse I have ever used.
 
 ## Looks
-The mouse looks very futuristic and elegant. It doesn't look anything like a traditional mouse. There is an aluminum body, covered by a curved glass touch-sensitive top surface.
+The mouse looks very futuristic and elegant. It doesn't look anything like a traditional mouse. There is an aluminum body, covered by a curved glass touch-sensitive top surface. Here's a picture from Wikipedia:
 
-![Apple Magic Mouse 2](https://en.wikipedia.org/wiki/Magic_Mouse_2#/media/File:Magic_Mouse.jpg)
+![Apple Magic Mouse 2](https://upload.wikimedia.org/wikipedia/commons/c/c8/Magic_Mouse.jpg)
 
 ## Battery and charging
 The mouse charges via a lightning port on the bottom. It takes about an hour for it to be fully-charged, and the battery lasts me a couple of months. This is when I keep it on all the time. I never toggle the switch to turn it off. So even though many people make fun of the position of the charging port, I found that it is a non-issue in usage.
