@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Strange MacOS feature that clobbers 'find' textboxes"
+title:  "IPsec overhead calculator"
 categories: projects
 ---
 Something I have been working on for the last few weekends is this [IPsec overhead calculator](https://ipsec-overhead-calculator.web.app).

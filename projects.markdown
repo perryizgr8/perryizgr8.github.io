@@ -7,7 +7,7 @@ permalink: /projects/
 ### TypeCalc
 A notepad style calculator with line-by-line evaluation.
 
-![Link](/Link.png) <https://type-calc.herokuapp.com/>
+![Link](/Link.png) <https://type-calc.herokuapp.com>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/typecalc>
 
@@ -15,7 +15,7 @@ A notepad style calculator with line-by-line evaluation.
 ### IPsec overhead calculator
 Calculate the overhead when you encrypt a packet using IPsec.
 
-![Link](/Link.png) <https://ipsec-overhead-calculator.web.app/>
+![Link](/Link.png) <https://ipsec-overhead-calculator.web.app>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/ipsec-overhead-calculator>
 
