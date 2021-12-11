@@ -55,6 +55,17 @@ again:
 
 It appears as though the previous instance of `nums` is reused in subsequent calls to the function! I certainly didn't expect that. It behaves like a static variable inside the function. This unexpected behavior is why `pylint` will flag this usage as `warning| Dangerous default value [] as argument`.
 
+You can avoid this quite easily by rewriting the function like this:
+{% highlight python %}
+def badfunc(nums=None):
+    if nums is None:
+        nums = []
+    nums.append(100)
+    nums.append(200)
+    for num in nums:
+        print(num)
+{% endhighlight %}
+
 ## Undefined loop variable
 Consider this useless piece of code:
 {% highlight python %}
