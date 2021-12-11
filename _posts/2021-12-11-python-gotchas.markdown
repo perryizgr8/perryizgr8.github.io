@@ -3,6 +3,7 @@ layout: post
 title:  "TIL: python gotchas"
 categories: python
 ---
+Thanks to `pylint`, I came across a couple of python gotchas that weren't obvious to me at first glance.
 
 ## Dangerous default value as argument
 Python allows you to declare a default value for an argument, if it is not supplied by the caller. Like so:
