@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Strange MacOS feature that clobbers 'find' textboxes"
-categories: UI
+categories: Apple
 ---
 Ever since I started using a Macbook as my work laptop, I've been getting irritated by this feature. It blurs the line between feature and bug, to be honest.
 
