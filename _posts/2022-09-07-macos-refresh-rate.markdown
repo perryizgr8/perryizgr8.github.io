@@ -10,9 +10,9 @@ I had a version of the laptop which had an Intel CPU in it. It had no problems c
 For the last 4 months however, I have been using a laptop that is identical to the first one, just with an Apple ARM CPU inside. I must say the experience with this machine has been very annoying when it comes to anything to do with connecting the monitor.
 
 ## Variable refresh rate has horrible artifacting
-This is a FreeSync monitor, which means it can sync its refresh rate to the content being displayed. In games, this is great because you don't need V-Sync in software, and makes everything looks smoother and without any screen tears.
+This is a FreeSync monitor, which means it can sync its refresh rate to the content being displayed. In games, this is great because you don't need V-Sync, and makes everything looks smoother and without any screen tears.
 
-This mode worked great with the Intel laptop, and it still works perfectly with my gaming PC. With the ARM Macbook, it creates a lot of flickering. I can notice it in my periferal vision and it annoys me to no end.
+This mode worked great with the Intel laptop, and it still works perfectly with my gaming PC. With the ARM Macbook, it creates a lot of flickering. I can notice it in my peripheral vision and it annoys me to no end.
 
 ## Refresh rate settings don't stick
 The fix is to set the monitor on a fixed refresh rate from MacOS display settings. If I set it to 144 Hz, the flickering goes away and I get a buttery smooth screen. But MacOS will revert to the variable mode every time you reconnect. It just won't remember the setting. They have also changed the settings app, making it an amazingly tedius process to modify this option now.
