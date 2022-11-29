@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "PDF deduplication"
+categories: python
+---
+Suppose you have a large number of PDF documents stored in your computer, and every so often keep adding new ones to your collection. A problem that rears its head soon is that you end up with a lot of duplicate documents on your disk. They eat up your storage and are annoying when you want to search for a particular document.
+
+## Naive solution - file checksum
+A super easy solution is to store a list of checksums for your files in a spreadsheet, like so:
+
+| File                    | MD5                              |
+|-------------------------|----------------------------------|
+| cyberdyne_systems.pdf   | 81f65b305684dfc5168b23472ddaef88 |
+| umbrella_corp.pdf       | a19dad769173792e21ae3aa33ec704d1 |
+| weyland_yutani_corp.pdf | eff5ee486550143f563360cbdf80ab10 |
+
+Whenever you are about to add a file to your collection, calculate its MD5 checksum (`$> md5sum evil_corp.pdf`) and search for the checksum in your spreadsheet. If you don't find it, add it as a new row, confident in the fact that you're not duplicating anything.
+
+### Why this fails
+Any small change to the document will cause the checksum to change completely, even if the change is insignificant or even invisible. PDF files have metadata in them, stuff like `/Producer`, `/CreationDate`, `/ModDate`, etc. For my purpose, I don't care about these things. I want to know if the content of the PDF is same or not. Also, some PDFs are generated on the fly when you request for them, and the generator program will put a small `Generated on 29-11-2022` somewhere in the document, probably in the footer. Again, even though this is technically part of the PDF content, and is also visible on the document, I don't care about this.
+
+## Smarter solution - image checksum
+Open the PDF file with a utility like [PyMuPDF](https://github.com/pymupdf/PyMuPDF). This gives you an option to render the document to an image. Then you can checksum the generated image instead. To handle files with multiple pages you can checksum each page's image, concatenate the checksums, and then checksum this concatenated string.
+
+## Why this fails
+This solves the metadata problem, you are now checksumming the visible part of the document, which is what you care about. Metadata can be totally different, but that won't affect your deduplication.
+It still doesn't do anything about the second problem. You don't want to strictly consider every pixel in the document. I want to tolerate small differences (a different date in a footnote, an extra box drawn around a word, etc.), and still consider such files identical.
+
+## Fuzzy hashing
