@@ -17,7 +17,9 @@ A super easy solution is to store a list of checksums for your files in a spread
 Whenever you are about to add a file to your collection, calculate its MD5 checksum (`$> md5sum evil_corp.pdf`) and search for the checksum in your spreadsheet. If you don't find it, add it as a new row, confident in the fact that you're not duplicating anything.
 
 ### Why this fails
-Any small change to the document will cause the checksum to change completely, even if the change is insignificant or even invisible. PDF files have metadata in them, stuff like `/Producer`, `/CreationDate`, `/ModDate`, etc. For my purpose, I don't care about these things. I want to know if the content of the PDF is same or not. Also, some PDFs are generated on the fly when you request for them, and the generator program will put a small `Generated on 29-11-2022` somewhere in the document, probably in the footer. Again, even though this is technically part of the PDF content, and is also visible on the document, I don't care about this.
+Any small change to the document will cause the checksum to change completely ([Avalanche effect](https://en.wikipedia.org/wiki/Avalanche_effect)), even if the change is insignificant or even invisible to the reader. PDF files have metadata in them, stuff like `/Producer`, `/CreationDate`, `/ModDate`, etc. For my purpose, I don't care about these things. I want to know if the content of the PDF is same or not.
+
+Also, some PDFs are generated on the fly when you request for them, and the generator program will put a small `Generated on 29-11-2022` somewhere in the document, probably in the footer. Again, even though this is technically part of the PDF content, and is also visible on the document, I don't care about this.
 
 ## Smarter solution - image checksum
 Open the PDF file with a utility like [PyMuPDF](https://github.com/pymupdf/PyMuPDF). This gives you an option to render the document to an image. Then you can checksum the generated image instead. To handle files with multiple pages you can checksum each page's image, concatenate the checksums, and then checksum this concatenated string.
