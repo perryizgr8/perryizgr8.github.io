@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "PDF deduplication"
+categories: python
+---
+Suppose you have a large number of PDF documents stored in your computer, and every so often keep adding new ones to your collection. A problem that rears its head soon is that you end up with a lot of duplicate documents on your disk. They eat up your storage and are annoying when you want to search for a particular document.
+
+## Naive solution - file checksum
+A super easy solution is to store a list of checksums for your files in a spreadsheet, like so:
+
+| File                    | MD5                              |
+|-------------------------|----------------------------------|
+| cyberdyne_systems.pdf   | 81f65b305684dfc5168b23472ddaef88 |
+| umbrella_corp.pdf       | a19dad769173792e21ae3aa33ec704d1 |
+| weyland_yutani_corp.pdf | eff5ee486550143f563360cbdf80ab10 |
+
+Whenever you are about to add a file to your collection, calculate its MD5 checksum (`$> md5sum evil_corp.pdf`) and search for the checksum in your spreadsheet. If you don't find it, add it as a new row, confident in the fact that you're not duplicating anything.
+
+### Why this fails
+Any small change to the document will cause the checksum to change completely ([Avalanche effect](https://en.wikipedia.org/wiki/Avalanche_effect)), even if the change is insignificant or even invisible to the reader. PDF files have metadata in them, stuff like `/Producer`, `/CreationDate`, `/ModDate`, etc. For my purpose, I don't care about these things. I want to know if the content of the PDF is same or not.
+
+Also, some PDFs are generated on the fly when you request for them, and the generator program will put a small `Generated on 29-11-2022` somewhere in the document, probably in the footer. Again, even though this is technically part of the PDF content, and is also visible on the document, I don't care about this.
+
+## Smarter solution - image checksum
+Open the PDF file with a utility like [PyMuPDF](https://github.com/pymupdf/PyMuPDF). This gives you an option to render the document to an image. Then you can checksum the generated image instead. To handle files with multiple pages you can checksum each page's image, concatenate the checksums, and then checksum this concatenated string.
+
+### Why this fails
+This solves the metadata problem, you are now checksumming the visible part of the document, which is what you care about. Metadata can be totally different, but that won't affect your deduplication.
+It still doesn't do anything about the second problem. You don't want to strictly consider every pixel in the document. I want to tolerate small differences (a different date in a footnote, an extra box drawn around a word, etc.), and still consider such files identical.
+
+## Locality sensitive hashing
+My search for a suitable solution led me to [this wikipedia page](https://en.wikipedia.org/wiki/Locality-sensitive_hashing).
+
+> locality-sensitive hashing (LSH) is an algorithmic technique that hashes similar input items into the same "buckets" with high probability.
+> Since similar items end up in the same buckets, this technique can be used for data clustering and nearest neighbor search. It differs from conventional hashing techniques in that hash collisions are maximized, not minimized. Alternatively, the technique can be seen as a way to reduce the dimensionality of high-dimensional data; high-dimensional input items can be reduced to low-dimensional versions while preserving relative distances between items.
+
+Pay attention to the last part:
+> high-dimensional input items can be reduced to low-dimensional versions while preserving relative distances between items.
+
+Sounds like exactly what I want. I want to reduce a PDF to a low-dimensional checksum, which remains comparable between different PDFs.
+
+This is quite new to me, so I am going to read all I can about it before I try to apply the technique to my problem. I am listing some links that I plan to examine.
+
+- [ImageHash on PyPi](https://pypi.org/project/ImageHash/)
+- [Description of average hash and perceptual hash](https://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html)
+- [Description of difference hash](https://www.hackerfactor.com/blog/index.php?/archives/529-Kind-of-Like-That.html)
