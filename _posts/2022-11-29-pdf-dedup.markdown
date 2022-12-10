@@ -24,8 +24,23 @@ Also, some PDFs are generated on the fly when you request for them, and the gene
 ## Smarter solution - image checksum
 Open the PDF file with a utility like [PyMuPDF](https://github.com/pymupdf/PyMuPDF). This gives you an option to render the document to an image. Then you can checksum the generated image instead. To handle files with multiple pages you can checksum each page's image, concatenate the checksums, and then checksum this concatenated string.
 
-## Why this fails
+### Why this fails
 This solves the metadata problem, you are now checksumming the visible part of the document, which is what you care about. Metadata can be totally different, but that won't affect your deduplication.
 It still doesn't do anything about the second problem. You don't want to strictly consider every pixel in the document. I want to tolerate small differences (a different date in a footnote, an extra box drawn around a word, etc.), and still consider such files identical.
 
-## Fuzzy hashing
+## Locality sensitive hashing
+My search for a suitable solution led me to [this wikipedia page](https://en.wikipedia.org/wiki/Locality-sensitive_hashing).
+
+> locality-sensitive hashing (LSH) is an algorithmic technique that hashes similar input items into the same "buckets" with high probability.
+> Since similar items end up in the same buckets, this technique can be used for data clustering and nearest neighbor search. It differs from conventional hashing techniques in that hash collisions are maximized, not minimized. Alternatively, the technique can be seen as a way to reduce the dimensionality of high-dimensional data; high-dimensional input items can be reduced to low-dimensional versions while preserving relative distances between items.
+
+Pay attention to the last part:
+> high-dimensional input items can be reduced to low-dimensional versions while preserving relative distances between items.
+
+Sounds like exactly what I want. I want to reduce a PDF to a low-dimensional checksum, which remains comparable between different PDFs.
+
+This is quite new to me, so I am going to read all I can about it before I try to apply the technique to my problem. I am listing some links that I plan to examine.
+
+- [ImageHash on PyPi](https://pypi.org/project/ImageHash/)
+- [Description of average hash and perceptual hash](https://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html)
+- [Description of difference hash](https://www.hackerfactor.com/blog/index.php?/archives/529-Kind-of-Like-That.html)
