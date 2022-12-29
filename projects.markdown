@@ -7,7 +7,7 @@ permalink: /projects/
 ### TypeCalc
 A notepad style calculator with line-by-line evaluation.
 
-![Link](/Link.png) <https://type-calc.herokuapp.com>
+![Link](/Link.png) <https://perryizgr8.github.io/typecalc>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/typecalc>
 
