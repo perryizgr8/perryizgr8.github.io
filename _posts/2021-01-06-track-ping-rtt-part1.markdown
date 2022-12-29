@@ -3,7 +3,7 @@ layout: post
 title:  "Tracking ping RTT to websites - part 1"
 categories: raspberry-pi
 ---
-In my quest to employ my Raspberry Pi to some use, I thought why not track ping round trip times to various popular websites. This would be less likely to run into the resource constraints that ruined my [speed test project](https://perryizgr8.github.io/raspberry-pi/2020/09/20/monitoring-speed-rpi.html), since the Pi's network link wouldn't be saturated. Also I decided to use `go` this time instead of `python`, for performance.
+In my quest to employ my Raspberry Pi to some use, I thought why not track ping round trip times to various popular websites. This would be less likely to run into the resource constraints that ruined my [speed test project](https://blog.perryizgr8.com/raspberry-pi/2020/09/20/monitoring-speed-rpi.html), since the Pi's network link wouldn't be saturated. Also I decided to use `go` this time instead of `python`, for performance.
 
 ## Putting together the program
 Go has a great ecosystem with people having written hundreds of packages for common stuff. You can usually import them from GitHub and use them in your project. I used the following:

@@ -7,7 +7,7 @@ permalink: /projects/
 ### TypeCalc
 A notepad style calculator with line-by-line evaluation.
 
-![Link](/Link.png) <https://perryizgr8.github.io/typecalc>
+![Link](/Link.png) <https://blog.perryizgr8.com/typecalc>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/typecalc>
 
@@ -23,7 +23,7 @@ Calculate the overhead when you encrypt a packet using IPsec.
 ### Adjust for inflation
 Find out the buying power of the Indian Rupee ₹ over time. Read my [blog post](/_posts/2020-08-02-adjust-for-inflation) about it.
 
-![Link](/Link.png) <https://perryizgr8.github.io/adjust-for-inflation>
+![Link](/Link.png) <https://blog.perryizgr8.com/adjust-for-inflation>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/adjust-for-inflation>
 
@@ -31,13 +31,13 @@ Find out the buying power of the Indian Rupee ₹ over time. Read my [blog post]
 ### Monitoring internet speed with a Raspberry Pi
 Read about my attempts to monitor my home internet speed using a Raspberry Pi.
 
-![Link](/Link.png) <https://perryizgr8.github.io/raspberry-pi/2020/09/20/monitoring-speed-rpi.html>
+![Link](/Link.png) <https://blog.perryizgr8.com/raspberry-pi/2020/09/20/monitoring-speed-rpi.html>
 
 
 ### Track ping RTT to websites using a Raspberry Pi
 Tracking the latency from your home internet connection to popular websites using a Raspberry Pi.
 
-![Link](/Link.png) <https://perryizgr8.github.io/raspberry-pi/2021/01/06/track-ping-rtt-part1.html>
+![Link](/Link.png) <https://blog.perryizgr8.com/raspberry-pi/2021/01/06/track-ping-rtt-part1.html>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/pinger>
 
@@ -52,7 +52,7 @@ Measuring the accuracy of weather prediction in Banglore over the last 5 days. U
 ### Hanuman Chalisa PWA
 Read the Hanuman Chalisa, with automatic dark mode and installable as a PWA.
 
-![Link](/Link.png) <https://perryizgr8.github.io/hanuman-chalisa>
+![Link](/Link.png) <https://blog.perryizgr8.com/hanuman-chalisa>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/hanuman-chalisa>
 
@@ -64,6 +64,6 @@ WinForms app to inject spurious ARP packets into your local network. Usually for
 ### Crores-To-Millions
 Simple converter between Indian and American number units.
 
-![Link](/Link.png) <https://perryizgr8.github.io/crores-to-millions>
+![Link](/Link.png) <https://blog.perryizgr8.com/crores-to-millions>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/crores-to-millions>
