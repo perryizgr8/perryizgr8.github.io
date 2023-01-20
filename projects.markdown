@@ -67,3 +67,8 @@ Simple converter between Indian and American number units.
 ![Link](/Link.png) <https://blog.perryizgr8.com/crores-to-millions>
 
 ![Code repository](/Code.png) <https://github.com/perryizgr8/crores-to-millions>
+
+### Simple gRPC server and client
+An example of a Go server and Python client communicating among themselves using gRPC and protobufs.
+
+![Code repository](/Code.png) <https://github.com/perryizgr8/gorpc>
