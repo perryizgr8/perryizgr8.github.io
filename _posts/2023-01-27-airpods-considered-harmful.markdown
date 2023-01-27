@@ -9,7 +9,7 @@ As is true for many software teams today, ours is a mixture of people from multi
 
 I consider my accent-understanding skills to be decent. I can make sense of all but the most extreme ones. And I like to think mine is at least intelligible to most others.
 
-Face-to-face conversations in person are rare, since our team is highly distributed across geographies and timezones. We use Google Meet and Slack huddles to converse with each other. Both of these tools' audio quality is excellent (although Google Meet's screen sharing quality leave a lot to be desired).
+Face-to-face conversations in person are rare, since our team is highly distributed across geographies and timezones. We use Google Meet and Slack huddles to converse with each other. Both of these tools' audio quality is excellent (although Google Meet's screen sharing quality leaves a lot to be desired).
 
 Everybody's voice comes out crystal clear, even when network connections are not the best.
 
