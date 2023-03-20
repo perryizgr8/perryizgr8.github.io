@@ -3,6 +3,8 @@ layout: post
 title:  "Self-hosting a Google Photos alternative"
 categories: photos
 ---
+A story about my quest to avoid paying Google in perpetuity.
+
 ## Google's bait and switch
 Google offered their excellent Google Photos app and backup service for many years, with unlimited photo/video backup. The only catch being that your media is compressed and uploaded. But the resulting quality was good enough that I did not mind. My wife and I used it for backing up all our photos, and sharing them with each other.
 
