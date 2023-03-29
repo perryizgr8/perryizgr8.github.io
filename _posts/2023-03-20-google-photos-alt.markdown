@@ -103,3 +103,8 @@ There are two possible solutions I can think of.
 2. I could use a Wireguard or Tailscale tunnel between my PC and some cloud server, and use that to route my traffic.
 
 I'll post an update when I manage to solve the issue.
+
+## Update
+I submitted a [PR](https://github.com/immich-app/immich/pull/2101) to Immich's GitHub repo that simply adds the header `Transfer-Encoding: chunked` to the request when uploading a file from the Flutter mobile app to the server. This makes the `HttpClient` omit the `Content-Length` header, which bypasses CloudFlare's checks, and our file upload completes successfully.
+
+The PR was merged and my changes are live in version [1.52.0](https://github.com/immich-app/immich/releases/tag/v1.52.0) of the app.
