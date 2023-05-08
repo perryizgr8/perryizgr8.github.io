@@ -3,7 +3,7 @@ layout: post
 title:  "How to store ranges in Elasticsearch Part 2"
 categories: elasticsearch
 ---
-*Read part 1 of this series [here](/_posts/2023-05-01-range-fields-elastic-search.markdown).*
+*Read part 1 of this series [here]({% post_url 2023-05-01-range-fields-elastic-search %}).*
 
 Last time we saw how to use range fields to store range values in Elasticsearch. You could store two discontinuous brightness ranges supported by a TV operating in two modes (SDR and HDR). However, we did not associate the ranges with their respective modes.
 

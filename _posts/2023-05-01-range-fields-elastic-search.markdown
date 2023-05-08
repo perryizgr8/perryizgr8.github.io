@@ -3,7 +3,7 @@ layout: post
 title:  "How to store ranges in Elasticsearch"
 categories: elasticsearch
 ---
-*This is part 1, read part 2 of this series [here](/_posts/2023-05-08-range-fields-elastic-search-2.markdown).*
+*This is part 1, read part 2 of this series [here]({% post_url 2023-05-08-range-fields-elastic-search-2 %}).*
 
 Elasticsearch is a great index and document based search system. It's amazing for storing a bunch of data and retrieving the right bit very quickly. It has a rich querying system that is highly flexible and overall it's a drop-in, batteries-included search engine that you can host.
 
