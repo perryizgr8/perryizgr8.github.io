@@ -3,6 +3,8 @@ layout: post
 title:  "How to store ranges in Elasticsearch"
 categories: elasticsearch
 ---
+*This is part 1, read part 2 of this series [here](/_posts/2023-05-08-range-fields-elastic-search-2.markdown).*
+
 Elasticsearch is a great index and document based search system. It's amazing for storing a bunch of data and retrieving the right bit very quickly. It has a rich querying system that is highly flexible and overall it's a drop-in, batteries-included search engine that you can host.
 
 I recently found out that Elasticsearch supports range field types. Instead of assigning a single value to a field, you can instead put in a range. These are called [range field types](https://www.elastic.co/guide/en/elasticsearch/reference/current/range.html#range). You can then make [ranged queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html) to look up these kind of fields.
