@@ -16,5 +16,3 @@ In times like these, it is helpful if you have a ready-to-go template to start y
 Enter [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
 It's easy to create a template using Cookiecutter for a basic Go app that serves a REST API using [Echo](https://echo.labstack.com/). It's set up with common amenities and has a nice starting point for any service.
-
-Have a look at my take at [it](https://github.com/parikshit-parspec/cookiecutter-go).
