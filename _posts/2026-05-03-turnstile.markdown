@@ -33,7 +33,9 @@ This was a fun one to implement. When you click a link in an app, Windows passes
 
 ## How I built it
 
-Turnstile is a WPF app written in C# on .NET 9. I went with WPF because it's the simplest way to get a lightweight, native-looking popup on Windows. The picker window positions itself near your cursor, animates in, and auto-closes if you click away from it.
+Here's the part that surprised even me — I didn't write a single line of code for this project. The entire app was built using Opencode GLM 5.1. I described what I wanted, iterated on the output, and ended up with a fully functional Windows app without writing any code myself.
+
+Turnstile is a WPF app written in C# on .NET 9. WPF turned out to be the simplest way to get a lightweight, native-looking popup on Windows. The picker window positions itself near your cursor, animates in, and auto-closes if you click away from it.
 
 All the configuration — rules, browser order, usage data — lives in JSON files under `%LOCALAPPDATA%\Turnstile\`. No database, no background service, nothing running when you're not picking a browser.
 
