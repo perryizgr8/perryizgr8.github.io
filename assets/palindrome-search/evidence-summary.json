@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-11-04",
+  "coverage": {
+    "verified_saved_audits": true,
+    "reaudited_certificates": false,
+    "full_family_hex_digits": 109,
+    "excluded_below_power_of_two": 436,
+    "contiguous_hex_digits_by_family": {
+      "1": 109,
+      "3": 109,
+      "5": 109,
+      "7": 109,
+      "9": 109,
+      "f": 109
+    },
+    "candidate_indices_accounted": 2163457024389511619974097860733598,
+    "visited_nodes": 52551831100,
+    "tested_leaves": 20,
+    "certificate_files": 648,
+    "hits": [],
+    "selected_scope_count": 648
+  },
+  "benchmark": {
+    "hex_digits": 80,
+    "leading_hex_digit": "5",
+    "old": {
+      "nodes": 16180545,
+      "worker_seconds": 37.23989512398839,
+      "audit_seconds": 32.54176421707962,
+      "proof_bytes": 6587947,
+      "certificate_sha256": "e9adce691166b68f7cd3865dbf4dc8675ed820d3669274dcaaea9e8b0b95ed17"
+    },
+    "dual": {
+      "complete": true,
+      "cpu_gpu_terminal_records_identical": true,
+      "worker_seconds": 3.9627336889971048,
+      "audit_seconds": 2.985987299005501,
+      "producer_seconds": 0.528201897,
+      "kernel_seconds": 0.0321426564157,
+      "nodes": 2539417,
+      "proof_bytes": 1052619,
+      "certificate_sha256": "b8a30792535231592a5fb30dd9df1b608f5f7e0dd27e8e8062c236918d25a792"
+    },
+    "note": "Single runs with concurrent workloads; reusable table discovery excluded. Node counts cover the same candidate set."
+  },
+  "availability": "The full engine and approximately 20.5GB of selected compressed search certificates are not bundled with this draft. This summary alone does not reproduce the exclusion bound. Arithmetic audits were performed at scope completion; the snapshot freshly checked hashes and nonoverlap."
+}
