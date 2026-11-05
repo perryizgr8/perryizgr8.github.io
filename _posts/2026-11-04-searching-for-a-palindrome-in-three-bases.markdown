@@ -10,8 +10,6 @@ It hasn't found one. The search has ruled out every possibility below `2^436`, u
 
 This post is about the things we learned while failing to find the number.
 
-*Status updated 5 November 2026.*
-
 ## The problem
 
 A palindrome depends on how you write it. For example:
@@ -121,7 +119,7 @@ That is about **6.4 times fewer nodes**, covering the same candidate set. The me
 
 The snapshot used for this post covers all six families at every hexadecimal length from 2 through 109. There were no matches. That excludes every qualifying integer below `2^436`.
 
-As of 5 November, both scheduled batches have finished. The CPU batch stopped cleanly at its deadline, finishing around 11:35 IST on 4 November with no reported failures. The latest completed coverage is:
+Both scheduled batches have finished. The CPU batch stopped cleanly at its deadline, finishing around 11:35 IST on 4 November with no reported failures. The latest completed coverage is:
 
 | Leading hexadecimal digit | Every length checked through |
 | --- | ---: |
