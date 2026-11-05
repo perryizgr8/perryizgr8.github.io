@@ -2,7 +2,7 @@
 layout: post
 title: "Searching for a palindrome in three number systems"
 categories: projects maths
-published: false
+published: true
 ---
 I asked Codex to find a number that reads the same forwards and backwards in decimal, binary, and hexadecimal. Each representation had to have at least two digits. Otherwise, numbers like 7 make the question rather boring.
 
@@ -138,7 +138,7 @@ Most of these candidates were never individually generated. The certificates par
 
 We also tested the pruning rules against deliberately reachable modular targets. Comparing two programs that both report an empty answer list is not enough to show that either one works.
 
-The [evidence summary](https://github.com/perryizgr8/perryizgr8.github.io/blob/draft/triple-base-palindromes/assets/palindrome-search/evidence-summary.json) records the fixed all-family snapshot, the latest family-specific status, and the benchmark. The large search certificates and full engine are not included with this post, so that summary alone is not a public reproduction of the complete exclusion bound. I am also not claiming a verified search record.
+The [evidence summary](https://github.com/perryizgr8/perryizgr8.github.io/blob/master/assets/palindrome-search/evidence-summary.json) records the fixed all-family snapshot, the latest family-specific status, and the benchmark. The large search certificates and full engine are not included with this post, so that summary alone is not a public reproduction of the complete exclusion bound. I am also not claiming a verified search record.
 
 ## What if there is no number?
 
@@ -174,7 +174,7 @@ For the two smaller families together, there are only `2^p` hexadecimal prefixes
 26 / ln(10) * 2^(-r)
 {% endhighlight %}
 
-That bound holds for every fixed positive integer `r`. Letting `r` grow forces the density to zero. The [full proof](https://github.com/perryizgr8/perryizgr8.github.io/blob/draft/triple-base-palindromes/assets/palindrome-search/length-density-proof.md) spells out the interval bound and the order of the limits. There is no assumption that decimal and hexadecimal digits behave independently at random.
+That bound holds for every fixed positive integer `r`. Letting `r` grow forces the density to zero. The [full proof](https://github.com/perryizgr8/perryizgr8.github.io/blob/master/assets/palindrome-search/length-density-proof.md) spells out the interval bound and the order of the limits. There is no assumption that decimal and hexadecimal digits behave independently at random.
 
 The same argument extends across all six families if adjacent nonzero hexadecimal digits are forbidden. The allowed prefixes then grow slowly enough for the bound to shrink. Interestingly, their growth rate is only just below the threshold needed by the proof.
 
@@ -184,6 +184,6 @@ Without that restriction, the larger families have four choices per independent 
 
 We have a much stronger search than the one we started with, a finite exclusion bound with checked certificates, and a proof draft about arbitrarily large lengths in restricted families. We still have no triple-base palindrome, no proof that none exists, and no confirmed claim of a new theorem.
 
-For anyone who wants to inspect the mathematical part, I included the proof and a [standalone Python validation script](https://github.com/perryizgr8/perryizgr8.github.io/blob/draft/triple-base-palindromes/assets/palindrome-search/validate_length_density.py). The script enumerates 131,055 general hexadecimal palindromes and checks the covering condition on actual positive decimal/hexadecimal examples. Those checks help catch implementation mistakes; the infinite-length conclusion comes from the proof, not the enumeration.
+For anyone who wants to inspect the mathematical part, I included the proof and a [standalone Python validation script](https://github.com/perryizgr8/perryizgr8.github.io/blob/master/assets/palindrome-search/validate_length_density.py). The script enumerates 131,055 general hexadecimal palindromes and checks the covering condition on actual positive decimal/hexadecimal examples. Those checks help catch implementation mistakes; the infinite-length conclusion comes from the proof, not the enumeration.
 
 I would still like to see the number. But making the constraints explain something, even without finding a match, has been a satisfying outcome in its own right.
