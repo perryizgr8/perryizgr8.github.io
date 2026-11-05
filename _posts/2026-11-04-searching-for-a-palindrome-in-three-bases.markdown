@@ -10,6 +10,8 @@ It hasn't found one. The search has ruled out every possibility below `2^436`, u
 
 This post is about the things we learned while failing to find the number.
 
+*Status updated 5 November 2026.*
+
 ## The problem
 
 A palindrome depends on how you write it. For example:
@@ -119,13 +121,26 @@ That is about **6.4 times fewer nodes**, covering the same candidate set. The me
 
 The snapshot used for this post covers all six families at every hexadecimal length from 2 through 109. There were no matches. That excludes every qualifying integer below `2^436`.
 
-The two smaller families, containing only `0/1` or `0/3`, were separately excluded through 1000 hexadecimal digits. That is not an all-family 1000-digit result.
+As of 5 November, both scheduled batches have finished. The CPU batch stopped cleanly at its deadline, finishing around 11:35 IST on 4 November with no reported failures. The latest completed coverage is:
+
+| Leading hexadecimal digit | Every length checked through |
+| --- | ---: |
+| 1 | 1000 |
+| 3 | 1000 |
+| 5 | 109 |
+| 7 | 112 |
+| 9 | 114 |
+| F | 112 |
+
+The GPU also completed the entire **113-digit family beginning with 5**. Its independent audit passed after a search visiting 2,448,728,317 nodes, again with no match. That result is beyond a gap: the 110-digit leading-5 family remains unfinished. Checking a later length does not fill an earlier one, so our complete all-family bound remains **109 hexadecimal digits**, or `2^436`.
+
+The two smaller families, containing only `0/1` or `0/3`, were separately excluded through 1000 hexadecimal digits. That is not an all-family 1000-digit result. Unfinished branches are checkpointed for resumption; the completed batches are no longer searching.
 
 Most of these candidates were never individually generated. The certificates partition the candidate space into checked leaves and rejected subtrees. A separate checker reconstructs each rejection and checks that the partition has no gaps or overlaps. A Python auditor is also available as a different implementation of the mathematics.
 
 We also tested the pruning rules against deliberately reachable modular targets. Comparing two programs that both report an empty answer list is not enough to show that either one works.
 
-The [evidence summary](https://github.com/perryizgr8/perryizgr8.github.io/blob/draft/triple-base-palindromes/assets/palindrome-search/evidence-summary.json) records the fixed snapshot and benchmark. The large search certificates and full engine are not included with this post, so that summary alone is not a public reproduction of the complete exclusion bound. I am also not claiming a verified search record.
+The [evidence summary](https://github.com/perryizgr8/perryizgr8.github.io/blob/draft/triple-base-palindromes/assets/palindrome-search/evidence-summary.json) records the fixed all-family snapshot, the latest family-specific status, and the benchmark. The large search certificates and full engine are not included with this post, so that summary alone is not a public reproduction of the complete exclusion bound. I am also not claiming a verified search record.
 
 ## What if there is no number?
 

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-04",
+  "as_of": "2026-11-05",
   "coverage": {
     "verified_saved_audits": true,
     "reaudited_certificates": false,
@@ -13,12 +13,13 @@
       "9": 109,
       "f": 109
     },
-    "candidate_indices_accounted": 2163457024389511619974097860733598,
+    "candidate_indices_accounted": 2.1634570243895116e+33,
     "visited_nodes": 52551831100,
     "tested_leaves": 20,
     "certificate_files": 648,
     "hits": [],
-    "selected_scope_count": 648
+    "selected_scope_count": 648,
+    "snapshot_as_of": "2026-11-04"
   },
   "benchmark": {
     "hex_digits": 80,
@@ -43,5 +44,39 @@
     },
     "note": "Single runs with concurrent workloads; reusable table discovery excluded. Node counts cover the same candidate set."
   },
-  "availability": "The full engine and approximately 20.5GB of selected compressed search certificates are not bundled with this draft. This summary alone does not reproduce the exclusion bound. Arithmetic audits were performed at scope completion; the snapshot freshly checked hashes and nonoverlap."
+  "availability": "The full engine and approximately 20.5GB of selected compressed search certificates are not bundled with this draft. This summary alone does not reproduce the exclusion bound. Arithmetic audits were performed at scope completion; the snapshot freshly checked hashes and nonoverlap.",
+  "latest_status": {
+    "as_of": "2026-11-05",
+    "contiguous_hex_digits_by_family": {
+      "1": 1000,
+      "3": 1000,
+      "5": 109,
+      "7": 112,
+      "9": 114,
+      "f": 112
+    },
+    "full_family_hex_digits": 109,
+    "excluded_below_power_of_two": 436,
+    "hits": [],
+    "immediate_unfinished_gap": {
+      "digits": 110,
+      "family": "5"
+    },
+    "cpu_batch": {
+      "finished_at": "2026-11-04T11:35:06+05:30",
+      "stopped_at_deadline": true,
+      "failures": [],
+      "certificate_digests_verified_at_finalization": true
+    },
+    "gpu_completed_scope": {
+      "digits": 113,
+      "family": "5",
+      "complete": true,
+      "audit_verified": true,
+      "nodes": 2448728317,
+      "hits": [],
+      "certificate_sha256": "ba89a4ed265fce88c7284870adff10b29ecc41988d4b2df1ae725bc2b42cdacb"
+    },
+    "note": "Family frontiers count only contiguous completed lengths. The additional completed 113-digit leading-5 scope does not fill the unfinished 110-digit leading-5 gap. Both scheduled batches have finished; partial work remains checkpointed."
+  }
 }
